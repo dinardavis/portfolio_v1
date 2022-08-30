@@ -8,9 +8,9 @@ export default function Contact() {
         <div className="title-decoration"></div>
       </div>
       <div className="contact-info">
-        <p className="contact-text">I am currently open to exploring new opportunities, so if you'd like to discuss how I might add to your project or team please feel free to reach out!</p>
+        <p className="contact-text">If you'd like to chat about a work opportunity, debate whether or not golf is sport, or discuss how you too are not over them killing off Tasha Yar in Season 1; I'm up for all of it!</p>
 
-        <a href="mailto:dinardavis@gmail.com?subject=I%20saw%20your%20portfolio%20and..." target="_blank" rel="noopener noreferrer" className="contact-btn">Say Hi!</a>
+        <a href="mailto:dinardavis@gmail.com?subject=I%20saw%20your%20portfolio%20and..." target="_blank" rel="noopener noreferrer" className="contact-btn">Talk soon!</a>
       </div>
     </section>
   )

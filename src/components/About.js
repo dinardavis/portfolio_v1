@@ -8,12 +8,12 @@ export default function About() {
         <div className="title-decoration"></div>
       </div>
       <div className="about-content">      
-        <div className="about-text">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum at repellendus dolores molestias pariatur repellat esse blanditiis ea, quae fugit voluptates tenetur natus laborum iure! Reiciendis ea ab illum natus. Labore, in cumque eius laudantium voluptate aspernatur, recusandae deserunt magnam fuga dolores id quas nisi, suscipit voluptatibus tempora dolorum a asperiores earum consequatur molestias. Assumenda odio necessitatibus modi culpa ea.</p>
+        <div className="about-text-container">
+          <p className="paragraph-text about-text">Howdy! Dinar, here. I began learning web development because I believe it to be the perfect combination of technical skill and creative expression, and I enjoy the challenge of combining them. Utilizing modern technologies to create valuable, fun, and aesthetically pleasing user experiences is my goal with every project.</p>
+                  
+          <p className="paragraph-text about-text">A few other tidbits about me: I'm a Japanese birth certificate holder,  globetrotter (Translation: I've eaten McDonald's on 4 continents), Star Trek fanatic (TNG), and a Fashionista...Interrupted.</p>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum at repellendus dolores molestias pariatur repellat esse blanditiis ea, quae fugit voluptates tenetur natus laborum iure! Reiciendis ea ab illum natus. Labore, in cumque eius laudantium voluptate aspernatur, recusandae deserunt magnam fuga dolores id quas nisi, suscipit voluptatibus tempora dolorum a asperiores earum consequatur molestias. Assumenda odio necessitatibus modi culpa ea.</p>
-
-          <p>Here are a few of the technologies that I working with:</p>
+          <p className="paragraph-text about-text">The technologies that I'm most commonly working with right now:</p>
         </div>
         <div className="tech-stack">
           <div className="stack-logos">

@@ -1,7 +1,7 @@
 import React from "react";
-import Links from './Socials'
 
 export default function Navbar() {
+
   return (
     <header className="nav-container">
       <a href="/#">

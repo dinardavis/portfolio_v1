@@ -15,7 +15,7 @@ function App() {
       <>
         <Navbar />
         <Socials />
-        <Email />
+        {/* <Email /> */}
         <div className="main-container">
           <Intro />
           <About />
