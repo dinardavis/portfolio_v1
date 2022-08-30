@@ -12,6 +12,10 @@ html {
   scroll-behavior: smooth;
 }
 
+img {
+  display: block;
+}
+
 :root {
   --background-primary: 255, 255, 255;
   --background-secondary: 78, 95, 117;
@@ -39,14 +43,10 @@ body {
 
 .nav-container {
   background-color: rgba(var(--background-primary), 0.9);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  position: fixed;
-  z-index: 100;
-  top: 0;
-  width: 100%;
+}
+
+.nav-shadow {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .main-nav {
