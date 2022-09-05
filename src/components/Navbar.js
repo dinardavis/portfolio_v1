@@ -1,10 +1,11 @@
 
 import React from 'react';
+import MobileNav from './MobileNav';
 import { debounce } from './utilities/helpers';
 
 export default function Navbar() {
   const [prevScroll, setPrevScroll] = React.useState(0) 
-  const [visible, setVisible] = React.useState(false)
+  const [visible, setVisible] = React.useState(true)
 
   const handleScroll = debounce(() => {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop
@@ -50,11 +51,7 @@ export default function Navbar() {
         <a href="/#contact" className="nav-link">contact</a>
       </div>
 
-      <div className="mobile-nav">
-        <div className="burger nav-line1"></div>
-        <div className="burger nav-line2"></div>
-        <div className="burger nav-line2"></div>
-      </div>
+      <MobileNav />
     </header>
       
   )
