@@ -58,8 +58,6 @@ body {
   height: 50px;
 }
 
-
-
 .mobile-nav-container {
   position: fixed;
   display: flex;
@@ -86,6 +84,7 @@ body {
 .hamburger {
   position: relative;
   z-index: 100;
+  transition: all .5s ease-in-out;
 }
 
 .burger-lines {
@@ -95,6 +94,20 @@ body {
   margin-bottom: 7px;
   border-radius: 3px;
 }
+
+.animate-burger:nth-child(1) {
+  transform: rotate(45deg) translate(9px, 6px);
+}
+
+.animate-burger:nth-child(2) {
+  transform: translateX(-70px);
+  background: transparent;
+}
+
+.animate-burger:nth-child(3) {
+  transform: rotate(-45deg) translate(8px, -6px);
+}
+
 
 .mobile-nav-link {
   color: var(--fontcolor-main);

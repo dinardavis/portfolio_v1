@@ -5,14 +5,15 @@ export default function MobileNav() {
 
   function handleToggle() {
     setMobileNav(prevNav => !prevNav)
+
   }
 
   return (
     <div className="mobile-nav">
       <div className="hamburger" onClick={handleToggle} >
-        <div className="burger-lines nav-line1"></div>
-        <div className="burger-lines nav-line2"></div>
-        <div className="burger-lines nav-line2"></div>
+        <div className={`burger-lines ${mobileNav? "animate-burger" : ""}`}></div>
+        <div className={`burger-lines ${mobileNav? "animate-burger" : ""}`}></div>
+        <div className={`burger-lines ${mobileNav? "animate-burger" : ""}`}></div>
       </div>
       
 
