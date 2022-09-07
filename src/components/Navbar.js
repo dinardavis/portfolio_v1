@@ -6,6 +6,11 @@ import { debounce } from './utilities/helpers';
 export default function Navbar() {
   const [prevScroll, setPrevScroll] = React.useState(0) 
   const [visible, setVisible] = React.useState(true)
+  const [mobileNavState, setMobileNavState] = React.useState(false)
+
+  function handleToggle() {
+    setMobileNavState(prevNav => !prevNav)
+  }
 
   const handleScroll = debounce(() => {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop
@@ -16,8 +21,6 @@ export default function Navbar() {
     }
     setPrevScroll(scrollTop)
   }, 10)
-
-  console.log(prevScroll)
 
   React.useEffect(() => {
     window.addEventListener('scroll', handleScroll)
@@ -33,13 +36,11 @@ export default function Navbar() {
     padding: '10px 20px',
     zIndex: '100',
     width: '100%',
-    transition: 'top 0.4s',
+    transition: 'top 0.3s',
   }
-
-  console.log(prevScroll === 0)
   
   return (
-    <header className={`nav-container ${prevScroll === 0 ? "" : "nav-shadow"}`} style = {{...styles, top: visible ? '0px' : '-75px'}}>
+    <header className={`nav-container ${prevScroll && mobileNavState === 0 ? "" : "nav-shadow"}`} style = {{...styles, top: visible ? '0px' : '-75px'}}>
       <a href="/#">
         <img className="nav-logo" src="imgs/logo.png" alt="" />
       </a>
@@ -51,7 +52,11 @@ export default function Navbar() {
         <a href="/#contact" className="nav-link">contact</a>
       </div>
 
-      <MobileNav />
+      <MobileNav 
+        mobileNavState={mobileNavState}
+        handleToggle={handleToggle} 
+      />
+      
     </header>
       
   )

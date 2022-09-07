@@ -37,6 +37,10 @@ body {
   color: var(--fontcolor-main);
 }
 
+.fixed-position {
+  overflow: hidden;
+}
+
 .main-container {
   position: relative;
   padding: 20px;
@@ -64,28 +68,30 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  text-transform: uppercase;
+  background: #fff;
+  width: 100%; 
   overflow-y: scroll;
   overflow: hidden;
-  top: 0;
-  background: #fff;
-  left: 0;
-  bottom: 0;
-  height: 0;
-  width: 100%;
-  max-width: 100%;
   z-index: 9;
+  left: 0;
+  opacity: .7;
+  height: 50vh;
+  top: -100vh;
+  transition: all 0.4s linear;
 }
 
-.showMobileNav {
+.show-mobile-nav {
+  opacity: .9;
+  top: 0;
   height: 100vh;
 }
 
 .hamburger {
   position: relative;
   z-index: 100;
-  transition: all .5s ease-in-out;
 }
+
 
 .burger-lines {
   background-color: rgb(var(--background-secondary));
@@ -93,6 +99,7 @@ body {
   width: 35px;
   margin-bottom: 7px;
   border-radius: 3px;
+  transition: all 0.2s linear;
 }
 
 .animate-burger:nth-child(1) {
@@ -100,8 +107,8 @@ body {
 }
 
 .animate-burger:nth-child(2) {
-  transform: translateX(-70px);
-  background: transparent;
+  transform: translateX(-100px);
+  opacity: 0;
 }
 
 .animate-burger:nth-child(3) {
