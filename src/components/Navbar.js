@@ -36,13 +36,14 @@ export default function Navbar() {
     padding: '10px 20px',
     zIndex: '100',
     width: '100%',
-    transition: 'top 0.3s',
+    transition: 'top 0.3s'
   }
+
   
   return (
-    <header className={`nav-container ${prevScroll && mobileNavState === 0 ? "" : "nav-shadow"}`} style = {{...styles, top: visible ? '0px' : '-75px'}}>
+    <header className={`nav-container ${prevScroll === 0 || mobileNavState ? "" : "nav-shadow"}`} style = {{...styles, top: visible ? '0px' : '-75px', backgroundColor: mobileNavState ? "transparent" : ""}}>
       <a href="/#">
-        <img className="nav-logo" src="imgs/logo.png" alt="" />
+        <img className="nav-logo" style = {{opacity: mobileNavState ? "0" : "1"}}src="imgs/logo.png" alt="main logo" />
       </a>
 
       <div className="main-nav">
