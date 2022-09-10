@@ -19,7 +19,7 @@ export default function Work() {
   return (
     <section className="work section-container" id="work">
       <div className="section-title">
-        <h3 >My Projects</h3>
+        <h3 >Projects</h3>
         <div className="title-decoration"></div>
       </div>
       <div className="projects">

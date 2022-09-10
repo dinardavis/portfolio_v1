@@ -1,7 +1,8 @@
 import './App.css';
 import Navbar from './components/Navbar'
-import Socials from './components/Socials'
+import SocialsDesktop from './components/SocialsDesktop'
 import Intro from './components/Intro'
+import Email from './components/Email'
 import About from './components/About'
 import Work from './components/Work'
 import Skills from './components/Skills'
@@ -14,15 +15,17 @@ function App() {
   return (
       <>  
         <Navbar />
-        <Socials />
-        {/* <Email /> */}
+        <SocialsDesktop />
+        <Email />
         <div className="main-container">
-          <Intro />
-          <About />
-          <Work />
-          <Skills /> 
-          <Contact />
-          <Footer />
+          <div className='main-content'>
+            <Intro />
+            <About />
+            <Work />
+            <Skills /> 
+            <Contact />
+            <Footer />
+          </div>
         </div>
       </>
   

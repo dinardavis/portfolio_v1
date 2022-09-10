@@ -33,7 +33,7 @@ export default function Navbar() {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: '10px 20px',
+    padding: '10px 25px',
     zIndex: '100',
     width: '100%',
     transition: 'top 0.3s'
@@ -48,8 +48,8 @@ export default function Navbar() {
 
       <div className="main-nav">
         <a href="/#about" className="nav-link">about</a>
-        <a href="/#work" className="nav-link">work</a>
-        <a href="/#bonus" className="nav-link">bonus</a>
+        <a href="/#work" className="nav-link">projects</a>
+        <a href="/#bonus" className="nav-link">experience</a>
         <a href="/#contact" className="nav-link">contact</a>
       </div>
 

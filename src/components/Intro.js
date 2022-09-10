@@ -1,7 +1,6 @@
 import React from 'react'
 
 export default function Intro() {
-  const mobile = true;
 
   return (
     <section className="intro">
@@ -22,7 +21,7 @@ export default function Intro() {
         </div>
         <div className='design-container'></div>
         
-        <a href="mailto:dinardavis@gmail.com?subject=I%20saw%20your%20portfolio%20and..." target="_blank" rel="noopener noreferrer" className={mobile ?"contact-btn-mobile" : "contact-btn"}>Get In Touch</a>
+        <a href="mailto:dinardavis@gmail.com?subject=I%20saw%20your%20portfolio%20and..." target="_blank" rel="noopener noreferrer" className="contact-btn-mobile">Get In Touch</a>
       </div>
     </section>
   )

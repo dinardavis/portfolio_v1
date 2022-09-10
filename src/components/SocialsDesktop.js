@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Links() {
+export default function SocialsDesktop() {
   return (
       <div className="socials-desktop">
         <a href="https://github.com/dinardavis" className="social-link" target="_blank" rel="noopener noreferrer"><img src="imgs/social/github.svg" alt=""/></a>
