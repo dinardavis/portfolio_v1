@@ -23,6 +23,7 @@ export default function MobileNav(props) {
         <a href="/#work" className="mobile-nav-link" onClick={props.handleToggle}>work</a>
         <a href="/#bonus" className="mobile-nav-link" onClick={props.handleToggle}>bonus</a>
         <a href="/#contact" className="mobile-nav-link" onClick={props.handleToggle}>contact</a>
+        <a href="/#contact" className="mobile-nav-link" onClick={props.handleToggle}>resumé</a>
       </div>
     </div>
   )
