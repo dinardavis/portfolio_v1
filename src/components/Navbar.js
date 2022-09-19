@@ -51,6 +51,7 @@ export default function Navbar() {
         <a href="/#work" className="nav-link">projects</a>
         <a href="/#bonus" className="nav-link">experience</a>
         <a href="/#contact" className="nav-link">contact</a>
+         <a href="/#contact" className="nav-link">dark mode</a>
       </div>
 
       <MobileNav 
