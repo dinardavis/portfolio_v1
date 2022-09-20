@@ -24,6 +24,7 @@ img {
   --fontcolor-main: #4E5F75;
   --fontcolor-secondary: #fff;
   --fontcolor-accent: #ca2a28;
+  --fontcolor-dark: #F5EE9E;
   --main-transition: all .1s ease-in-out;
   --box-shadow1: rgba(0, 0, 0, 0.4) 6px 8px 8px;
 }
@@ -92,6 +93,18 @@ body {
   opacity: 1;
   top: 0;
   height: 100vh;
+}
+
+.dark-mode-toggle {
+  margin-left: 25px;
+  border: 1px solid;
+  border-radius: 7px;
+  padding: 2px 8px;
+  cursor: pointer;
+}
+
+.dark-mode-toggle:hover {
+  color: var(--fontcolor-accent);
 }
 
 .hamburger {
@@ -384,7 +397,8 @@ body {
   background-color: rgba(var(--background-dark), 0.9);
 }
 
-#dark-mode .nav-container .main-nav .nav-link {
+#dark-mode .nav-container .main-nav .nav-link,
+#dark-mode .nav-container .mobile-nav .mobile-nav-link {
   color: var(--fontcolor-secondary);
 }
 
@@ -395,6 +409,14 @@ body {
 
 #dark-mode .nav-container .nav-link:hover {
   color: var(--fontcolor-secondary);
+}
+
+#dark-mode .nav-container .main-nav .dark-mode-toggle {
+  color: var(--fontcolor-secondary);
+}
+
+#dark-mode .nav-container .main-nav .dark-mode-toggle:hover {
+  color: var(--fontcolor-dark);
 }
 
 #dark-mode .nav-shadow {
@@ -410,12 +432,16 @@ body {
 }
 
 #dark-mode .social-link img {
-  -webkit-filter: invert(23%) sepia(64%) saturate(3548%) hue-rotate(351deg) brightness(86%) contrast(82%);
-          filter: invert(23%) sepia(64%) saturate(3548%) hue-rotate(351deg) brightness(86%) contrast(82%);
+  -webkit-filter: invert(92%) sepia(20%) saturate(633%) hue-rotate(3deg) brightness(99%) contrast(98%);
+  filter: invert(92%) sepia(20%) saturate(633%) hue-rotate(3deg) brightness(99%) contrast(98%);
+}
+
+#dark-mode .tech-stack .stack-logos img {
+  filter: invert(92%) sepia(20%) saturate(633%) hue-rotate(3deg) brightness(99%) contrast(98%);
 }
 
 #dark-mode .intro-greeting {
-  color: var(--fontcolor-accent);
+  color: var(--fontcolor-dark);
 }
 
 #dark-mode .name {
@@ -427,17 +453,7 @@ body {
 }
 
 #dark-mode .pulse:hover {
-  color: var(--fontcolor-accent);
-}
-
-#dark-mode .contact-btn {
-  color: var(--fontcolor-accent);
-  color: var(--fontcolor-accent);
-  border: 2px solid var(--fontcolor-accent);
-}
-
-#dark-mode .contact-btn:hover {
-  color: rgb(var(--background-dark));
+  color: var(--fontcolor-dark);
 }
 
 #dark-mode .title-decoration {
@@ -464,6 +480,16 @@ body {
 #dark-mode .project-btn {
   color: rgb(var(--background-dark));
   background-color: var(--fontcolor-secondary);
+}
+
+#dark-mode .contact-btn {
+  color: var(--fontcolor-dark);
+  border: 2px solid var(--fontcolor-dark);
+  background-image: linear-gradient(var(--fontcolor-dark), var(--fontcolor-dark));
+}
+
+#dark-mode .contact-btn:hover {
+  color: rgb(var(--background-dark));
 }
 
 #dark-mode .footer {
@@ -501,13 +527,14 @@ body {
     cursor: pointer;
   }
 
+  .contact-btn:hover {
+    color: rgb(var(--background-dark));
+  }
+
 
 }
 
 @media screen and (min-width: 768px) {
-  .main-content {
-  }
-
   .nav-container {
     display: flex;
     justify-content: space-between;
@@ -550,6 +577,17 @@ body {
     background-size: 100% 1.5px;
   }
 
+  #dark-mode .nav-container .main-nav .nav-link {
+    background-image: linear-gradient(var(--fontcolor-dark), var(--fontcolor-dark));
+
+  }
+
+  #dark-mode .nav-container .main-nav .nav-link:hover {
+    color: var(--fontcolor-dark);
+    background-position: 100% 100%;
+    background-size: 100% 1.5px;
+  }
+
   .socials-mobile {
     display: none;
   }
@@ -581,6 +619,11 @@ body {
     cursor: pointer;
   }
 
+  #dark-mode .email {
+    background-color: var(--fontcolor-dark);
+    color: rgb(var(--background-dark));
+  }
+  
   .projects-mobile {
     display: none;
   }

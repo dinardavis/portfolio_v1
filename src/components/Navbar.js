@@ -3,7 +3,7 @@ import React from 'react';
 import MobileNav from './MobileNav';
 import { debounce } from './utilities/helpers';
 
-export default function Navbar() {
+export default function Navbar(props) {
   const [prevScroll, setPrevScroll] = React.useState(0) 
   const [visible, setVisible] = React.useState(true)
   const [mobileNavState, setMobileNavState] = React.useState(false)
@@ -51,7 +51,7 @@ export default function Navbar() {
         <a href="/#work" className="nav-link">projects</a>
         <a href="/#bonus" className="nav-link">experience</a>
         <a href="/#contact" className="nav-link">contact</a>
-         <a href="/#contact" className="nav-link">dark mode</a>
+        <div className="dark-mode-toggle" onClick={props.toggleDarkMode}>{props.darkMode ? <i class="fa-regular fa-lightbulb"></i> : <i class="fa-solid fa-lightbulb"></i>}</div>
       </div>
 
       <MobileNav 

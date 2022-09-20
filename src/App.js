@@ -1,3 +1,4 @@
+import React from "react"
 import './App.css';
 import Navbar from './components/Navbar'
 import SocialsDesktop from './components/SocialsDesktop'
@@ -11,10 +12,23 @@ import Footer from './components/Footer'
 
 
 function App() {
+  const [darkMode, setDarkMode] = React.useState(true)
 
+  function toggleDarkMode() {
+    setDarkMode(prevMode => !prevMode)
+    if(darkMode) {
+      document.body.id = "dark-mode"
+    } else {
+      document.body.id = ""
+    }
+  }
+  
   return (
       <>  
-        <Navbar />
+        <Navbar 
+          toggleDarkMode={toggleDarkMode}
+          darkMode={darkMode}
+        />
         <SocialsDesktop />
         <Email />
         <div className="main-container">
