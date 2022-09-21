@@ -20,7 +20,7 @@ export default function MobileNav(props) {
 
       <div className={`mobile-nav-container ${props.mobileNavState ? "show-mobile-nav" : ""}`}>
         <a href="/#about" className="mobile-nav-link" onClick={props.handleToggle}>about</a>
-        <a href="/#work" className="mobile-nav-link" onClick={props.handleToggle}>work</a>
+        <a href="/#work" className="mobile-nav-link" onClick={props.handleToggle}>projects</a>
         <a href="/#bonus" className="mobile-nav-link" onClick={props.handleToggle}>bonus</a>
         <a href="/#contact" className="mobile-nav-link" onClick={props.handleToggle}>contact</a>
         <a href="/#contact" className="mobile-nav-link" onClick={props.handleToggle}>resumé</a>

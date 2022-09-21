@@ -22,6 +22,8 @@ export default function Navbar(props) {
     setPrevScroll(scrollTop)
   }, 10)
 
+  
+
   React.useEffect(() => {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
@@ -39,11 +41,10 @@ export default function Navbar(props) {
     transition: 'top 0.3s'
   }
 
-  
   return (
-    <header className={`nav-container ${prevScroll === 0 || mobileNavState ? "" : "nav-shadow"}`} style = {{...styles, top: visible ? '0px' : '-75px', backgroundColor: mobileNavState ? "transparent" : ""}}>
+    <header className={`nav-container ${prevScroll === 0 || mobileNavState ? "no-background" : "nav-shadow"}`} style = {{...styles, top: visible ? '0px' : '-75px', backgroundColor: mobileNavState ? "transparent" : ""}}>
       <a href="/#">
-        <img className="nav-logo" style = {{opacity: mobileNavState ? "0" : "1"}}src="imgs/logo.png" alt="main logo" />
+        <img className="nav-logo" style = {{opacity: mobileNavState ? "0" : "1"}} src="imgs/logo.png" alt="main logo" />
       </a>
 
       <div className="main-nav">
@@ -51,7 +52,7 @@ export default function Navbar(props) {
         <a href="/#work" className="nav-link">projects</a>
         <a href="/#bonus" className="nav-link">experience</a>
         <a href="/#contact" className="nav-link">contact</a>
-        <div className="dark-mode-toggle" onClick={props.toggleDarkMode}>{props.darkMode ? <i class="fa-regular fa-lightbulb"></i> : <i class="fa-solid fa-lightbulb"></i>}</div>
+        <div className="dark-mode-toggle" onClick={props.toggleDarkMode}>{props.darkMode ? <i className="fa-regular fa-lightbulb"></i> : <i className="fa-solid fa-lightbulb"></i>}</div>
       </div>
 
       <MobileNav 

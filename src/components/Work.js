@@ -22,10 +22,7 @@ export default function Work() {
         <h3 >Projects</h3>
         <div className="title-decoration"></div>
       </div>
-      <div className="projects">
-        
-      </div>
-    
+
       {projects}
     
     </section>

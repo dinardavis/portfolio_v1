@@ -7,9 +7,9 @@ export default function Project(props) {
   }
 
   return (
-    <div className="project-card">
-      <h4 className="project-title">{props.title}</h4>
+    <div className="project-card"> 
       <div className="project-info">
+        <h4 className="project-title">{props.title}</h4>
         <div className="project-desc">
           <p>{props.desc}</p>
         </div>
