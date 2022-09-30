@@ -2,7 +2,6 @@ import React from "react";
 
 export default function MobileNav(props) {
 
-
   if(props.mobileNavState) {
     document.body.classList.add('fixed-position')
   } else {
@@ -18,12 +17,12 @@ export default function MobileNav(props) {
       </div>
       
 
-      <div className={`mobile-nav-container ${props.mobileNavState ? "show-mobile-nav" : ""}`}>
-        <a href="/#about" className="mobile-nav-link" onClick={props.handleToggle}>about</a>
-        <a href="/#work" className="mobile-nav-link" onClick={props.handleToggle}>projects</a>
-        <a href="/#bonus" className="mobile-nav-link" onClick={props.handleToggle}>bonus</a>
-        <a href="/#contact" className="mobile-nav-link" onClick={props.handleToggle}>contact</a>
-        <a href="/#contact" className="mobile-nav-link" onClick={props.handleToggle}>resumé</a>
+      <div className={`mobile-nav-container ${props.mobileNavState ? "show-mobile-nav" : ""}`} onClick={props.handleToggle}>
+        <a href="/#about" className="mobile-nav-link">about</a>
+        <a href="/#work" className="mobile-nav-link">projects</a>
+        <a href="/#bonus" className="mobile-nav-link">bonus</a>
+        <a href="/#contact" className="mobile-nav-link">contact</a>
+        <a href="/#contact" className="mobile-nav-link">resumé</a>
       </div>
     </div>
   )
