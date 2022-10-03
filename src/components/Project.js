@@ -35,14 +35,14 @@ export default function Project(props) {
             </div>
             <ul className="proj-tech-list">
               {listItems}
-            </ul>
-            <div className='btn-container'>
-              <a href={props.git} className="project-btn btn-1">Github</a>
-              <a href={props.demo} className="project-btn btn-2">Preview</a>
-            </div>
+            </ul>    
           </div>
           <div className="project-card" style={{backgroundImage: props.image}}>
-        </div>
+          </div>
+          <div className='btn-container'>
+            <a href={props.git} className="project-btn btn-1">Github</a>
+            <a href={props.demo} className="project-btn btn-2">Preview</a>
+          </div>
       </div>
     
     </>
