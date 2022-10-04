@@ -25,22 +25,24 @@ function App() {
   
   return (
       <>  
-        <Navbar 
-          toggleDarkMode={toggleDarkMode}
-          darkMode={darkMode}
-        />
-        <SocialsDesktop />
-        <Email />
-        <div className="main-container">
-          <div className='main-content'>
-            <Intro />
-            <About />
-            <Work />
-            <Skills /> 
-            <Contact />
-            <Footer />
+        <div className="master-container">
+          <Navbar 
+            toggleDarkMode={toggleDarkMode}
+            darkMode={darkMode}
+          />
+          <SocialsDesktop />
+          <Email />
+          <div className="main-container">
+            <div className='main-content'>
+              <Intro />
+              <About />
+              <Work />
+              <Skills /> 
+              <Contact />
+              <Footer />
+            </div>
           </div>
-        </div>
+        </div>   
       </>
   
   );

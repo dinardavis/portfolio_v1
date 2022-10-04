@@ -17,6 +17,7 @@ img {
 }
 
 :root {
+  font-size: 17px;
   --background-primary: 227, 242, 253;
   --background-dark: 20, 32, 67;
   --background-secondary: 78, 95, 117;
@@ -34,7 +35,6 @@ body {
   min-height: 100vh;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  font-size: .9rem;
   line-height: 1.4;
   background-color: rgb(var(--background-primary));
   color: var(--fontcolor-main);
@@ -43,6 +43,11 @@ body {
 
 .fixed-position {
   overflow: hidden;
+}
+
+.master-container {
+  max-width: 2400px;
+  margin: 0 auto;
 }
 
 .main-container {
@@ -139,7 +144,7 @@ body {
 
 .mobile-nav-link {
   color: var(--fontcolor-main);
-  font-size: 24px;
+  font-size: 1.5rem;
   margin-bottom: 30px;
 }
 
@@ -169,18 +174,15 @@ body {
 
 .social-link img:hover {
   transform: scale(1.2);
-}  
-
-.arrow-container {
-  display: none;
 }
 
-.greeting-container {
-  margin-top: 120px;
+.greeting-message {
+  position: absolute;
+  top: calc(50% - 200px);
 }
 
 .intro-greeting {
-  font-size: 2.2em;
+  font-size: 7vw;
   line-height: 1.1;
   overflow: hidden;
   color: var(--fontcolor-secondary);
@@ -188,7 +190,7 @@ body {
 
 .name {
   display: flex;
-  font-size: 1.9em;
+  font-size: 11vw;
   overflow: hidden;
   color: var(--fontcolor-main);
   cursor: pointer;
@@ -220,15 +222,20 @@ body {
   color: var(--fontcolor-accent);
 }
 
-.paragraph-text {
-  padding: 5px 0;
-  font-size: 1.1em;
-  margin: 15px 0;
+.intro-text-container {
+  max-width: 600px;
 }
 
 .intro-text:last-of-type {
+  max-width: 500px;
   margin-bottom: 60px;
 }
+
+.paragraph-text {
+  padding: 5px 0;
+  margin: 15px 0;
+}
+
 
 .contact-btn {
   color: var(--fontcolor-secondary);
@@ -242,8 +249,10 @@ body {
 }
 
 .intro {
+  position: relative;
   padding-top: 100px;
-  min-height: 100vh;
+  height: 100vh;
+  max-height: 1400px;
 }
 
 .about {
@@ -251,7 +260,7 @@ body {
 }
 
 .section-title {
-  font-size: 2em;
+  font-size: 1.8rem;
   margin-bottom: 2rem;
 }
 
@@ -327,7 +336,7 @@ body {
 }
 
 .project-desc {
-  font-size: 1.1em;
+  font-size: .9rem;
   font-weight: 600;
 }
 
@@ -380,7 +389,6 @@ body {
 
 .contact-text {
   margin: 50px 20px;
-  font-size: 1rem;
   max-width: 600px;
 }
 
@@ -394,7 +402,7 @@ body {
 }
 
 .footer {
-  font-size: .8rem;
+  font-size: .7rem;
   text-align: center;
   color: var(--fontcolor-main)
 }
@@ -545,6 +553,7 @@ body {
   .nav-container {
     display: flex;
     justify-content: space-between;
+    max-width: 2400px;
   }
 
   .fixed-position {
@@ -560,6 +569,7 @@ body {
     justify-content: end;
     align-items: center;
     text-transform: uppercase;
+    font-size: .85rem;
   }
 
   .nav-link {
@@ -608,7 +618,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    top: 25%;
+    top: calc(50% - 200px);
     right: 10px;
     height: 400px;
     z-index: 10;
@@ -616,12 +626,13 @@ body {
 
   .email {
     display: block;
-    position: fixed;
+    position:fixed;
     left: -70px;
-    top: 50%;
+    top: calc(50%);
     transform: rotate(90deg);
     padding: 5px 10px 8px;
     background-color: var(--fontcolor-main);
+    font-size: .8rem;
     color: rgb(var(--background-primary));
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -632,6 +643,19 @@ body {
   #dark-mode .email {
     background-color: var(--fontcolor-dark-main);
     color: rgb(var(--background-dark));
+  }
+
+  .intro-greeting {
+    font-size: 3rem;
+  }
+  
+  .name {
+    font-size: 5rem;
+  }
+
+  .about-content {
+    width: 80%;
+    margin: 0 auto;
   }
 
   #dark-mode .proj-tech-list {
