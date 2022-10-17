@@ -25,7 +25,6 @@ export default function Project(props) {
       </div>
 
       <section className='project-card-desktop'>
-      
         <div className="project-info">
             <h4 className="project-title">{props.title}</h4>
             <div className="project-desc">
@@ -34,7 +33,6 @@ export default function Project(props) {
             <ul className="proj-tech-list">
               {listItems}
             </ul>
-
             <div className='btn-container'>
               <a href={props.git} className="project-btn btn-1">Github</a>
               <a href={props.demo} className="project-btn btn-2">Preview</a>
