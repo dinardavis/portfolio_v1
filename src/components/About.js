@@ -1,6 +1,21 @@
 import React from 'react'
 
 export default function About() {
+
+  // function addStackToolTip() {
+  //   const stacklogos = document.querySelectorAll('.stack-logo')
+  //   const logosWithToolTip = [...stacklogos].map(stacklogo => () => {
+  //     stacklogo.addEventListener('click', ()=> {
+  //       console.log('working')
+  //     })
+  //   })
+
+   
+  
+
+ 
+ 
+
   return (
     <section className="about section-container" id="about">
       <div className="section-title">
@@ -17,15 +32,13 @@ export default function About() {
         </div>
         <div className="tech-stack">
           <div className="stack-logos">
-            <img src="imgs/techstack/javascript.svg" alt="" />
-            <img src="imgs/techstack/nodejs.svg" alt="" />
-            <img src="imgs/techstack/react.svg" alt="" />
-            <img src="imgs/techstack/html.svg" alt="" />
-            <img src="imgs/techstack/css3.svg" alt="" />
-            <img src="imgs/techstack/sass.svg" alt="" />
-            <img src="imgs/techstack/photoshop.svg" alt="" />
-            <img src="imgs/techstack/illustrator.svg" alt="" />
-            <img src="imgs/techstack/jquery.svg" alt="" />
+            <img src="imgs/techstack/javascript.svg" className="stack-logo" title="Javascript" alt="" />
+            <img src="imgs/techstack/react.svg" className="stack-logo" title="React" alt="" />
+            <img src="imgs/techstack/nodejs.svg" className="stack-logo" title="Node JS" alt="" />
+            <img src="imgs/techstack/jquery.svg" className="stack-logo" title="jQuery" alt="" />
+            <img src="imgs/techstack/sass.svg" className="stack-logo" title="Sass" alt="" />
+            <img src="imgs/techstack/photoshop.svg" className="stack-logo" title="Photoshop" alt="" />
+            <img src="imgs/techstack/illustrator.svg" className="stack-logo" title="Illustrator" alt="" />
           </div>
         </div>
       </div>
