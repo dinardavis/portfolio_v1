@@ -22,7 +22,7 @@ export default function MobileNav(props) {
         <a href="/#work" className="mobile-nav-link">projects</a>
         <a href="/#bonus" className="mobile-nav-link">bonus</a>
         <a href="/#contact" className="mobile-nav-link">contact</a>
-        <a href="/#contact" className="mobile-nav-link">resumé</a>
+        <a href={require("../assets/resume.pdf")} download="resume" className="mobile-nav-link">resumé</a>
       </div>
     </div>
   )
