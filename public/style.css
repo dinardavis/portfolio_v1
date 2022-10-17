@@ -681,6 +681,10 @@ body {
   #dark-mode .project-info {
     background-color: rgb(var(--background-dark-accent));
   }
+  
+  #dark-mode .project-card:hover:before {
+    background: rgba(var(--background-dark), 0.2);
+  }
 
   .projects-container section:nth-of-type(even)  {
     flex-flow: row-reverse;
@@ -734,6 +738,7 @@ body {
   }
 
   .project-card:hover:before {
+    background: rgba(var(--background-primary), 0.2);
     cursor: pointer;
   }
 

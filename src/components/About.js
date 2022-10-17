@@ -2,20 +2,6 @@ import React from 'react'
 
 export default function About() {
 
-  // function addStackToolTip() {
-  //   const stacklogos = document.querySelectorAll('.stack-logo')
-  //   const logosWithToolTip = [...stacklogos].map(stacklogo => () => {
-  //     stacklogo.addEventListener('click', ()=> {
-  //       console.log('working')
-  //     })
-  //   })
-
-   
-  
-
- 
- 
-
   return (
     <section className="about section-container" id="about">
       <div className="section-title">
