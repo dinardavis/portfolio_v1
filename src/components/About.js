@@ -23,6 +23,9 @@ export default function About() {
             <img src="imgs/techstack/html.svg" alt="" />
             <img src="imgs/techstack/css3.svg" alt="" />
             <img src="imgs/techstack/sass.svg" alt="" />
+            <img src="imgs/techstack/photoshop.svg" alt="" />
+            <img src="imgs/techstack/illustrator.svg" alt="" />
+            <img src="imgs/techstack/jquery.svg" alt="" />
           </div>
         </div>
       </div>

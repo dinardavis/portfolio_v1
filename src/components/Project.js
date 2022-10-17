@@ -6,8 +6,6 @@ export default function Project(props) {
     listItems.push(<li className='project-tech' key={i} >{props.tech[i]}</li>)
   }
 
-  console.log(props.image)
-
   return (
     <>
       <div className="project-card mobile" style={{backgroundImage: props.image}}>
@@ -26,7 +24,7 @@ export default function Project(props) {
         </div>
       </div>
 
-      <div className='project-card-desktop'>
+      <section className='project-card-desktop'>
       
         <div className="project-info">
             <h4 className="project-title">{props.title}</h4>
@@ -35,15 +33,16 @@ export default function Project(props) {
             </div>
             <ul className="proj-tech-list">
               {listItems}
-            </ul>    
+            </ul>
+
+            <div className='btn-container'>
+              <a href={props.git} className="project-btn btn-1">Github</a>
+              <a href={props.demo} className="project-btn btn-2">Preview</a>
+            </div>    
           </div>
           <div className="project-card" style={{backgroundImage: props.image}}>
-          </div>
-          <div className='btn-container'>
-            <a href={props.git} className="project-btn btn-1">Github</a>
-            <a href={props.demo} className="project-btn btn-2">Preview</a>
-          </div>
-      </div>
+          </div>     
+      </section>
     
     </>
    

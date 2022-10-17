@@ -24,7 +24,10 @@ export default function Work() {
         <div className="title-decoration"></div>
       </div>
 
-      {projects}
+      <div className="projects-container">
+        {projects}
+      </div>
+   
     
     </section>
   )
