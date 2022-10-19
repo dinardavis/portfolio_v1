@@ -18,20 +18,22 @@ img {
 
 :root {
   font-size: 17px;
-  --background-primary: 248, 243, 231;
-  --background-secondary: 248, 243, 231;
-  --background-accent: 240, 162, 2;
-  --background-dark: 14, 20, 40;
+  --background-primary: 251, 255, 254;
+  --background-secondary: 250, 169, 22;
+  --background-accent: 112, 107, 113;
+  --background-dark: 27, 27, 30;
   --background-dark-secondary: 19, 26, 47;
-  --background-dark-accent: 240, 162, 2;
-  --background-dark-project-card: 249, 206, 122;
-  --fontcolor-main: #0e1428;
-  --fontcolor-secondary: #F0A202;
-  --fontcolor-accent: #b47a07;
+  --background-dark-accent: 251, 255, 254;
+  --background-dark-project-card: 34, 33, 33;
+  --fontcolor-main: #706b71;
+  --fontcolor-background: #fbfffe;
+  --fontcolor-secondary: #faa916;
+  --fontcolor-accent: #1b1b1e;
   --fontcolor-pop: #cb1222;
-  --fontcolor-dark-main: #fcf1d8;
-  --fontcolor-dark-secondary: #f9ce7a;
-  --fontcolor-dark-accent: #F0A202;
+  --fontcolor-dark-main: #fbfffe;
+  --fontcolor-dark-background: #1b1b1e;
+  --fontcolor-dark-secondary: #faa916;
+  --fontcolor-dark-accent: #706b71;
   
   --main-transition: all .1s ease-in-out;
   --box-shadow1: rgba(0, 0, 0, 0.4) 3px 3px 8px;
@@ -44,7 +46,6 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   line-height: 1.4;
-  background-color: rgb(var(--background-primary));
   background-attachment: fixed;
   background-image: linear-gradient(160deg, rgb(var(--background-primary)), rgb(var(--background-primary)), rgb(var(--background-primary)));
   color: var(--fontcolor-main);
@@ -154,12 +155,13 @@ body {
 
 .mobile-nav-link {
   color: var(--fontcolor-main);
+  text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 6px;
   font-size: 1.5rem;
   margin-bottom: 30px;
 }
 
 .mobile-nav-link:hover {
-  color: var(--fontcolor-dark-accent);
+  color: var(--fontcolor-pop);
 }
 
 .email {
@@ -177,8 +179,8 @@ body {
 }
 
 .social-link img {
-  -webkit-filter: invert(7%) sepia(11%) saturate(3308%) hue-rotate(188deg) brightness(97%) contrast(98%);
-  filter: invert(7%) sepia(11%) saturate(3308%) hue-rotate(188deg) brightness(97%) contrast(98%);
+  -webkit-filter: invert(46%) sepia(6%) saturate(307%) hue-rotate(244deg) brightness(90%) contrast(92%);
+  filter: invert(46%) sepia(6%) saturate(307%) hue-rotate(244deg) brightness(90%) contrast(92%);
   height: 25px;
   width: 25px;
   margin: 10px 22px;
@@ -275,6 +277,7 @@ body {
 .section-title {
   font-size: 1.8rem;
   margin-bottom: 2rem;
+  color: var(--fontcolor-main)
 }
 
 .title-decoration {
@@ -298,7 +301,7 @@ body {
 .stack-logos img {
   height: 3em;
   margin: 5%;
-  filter: invert(5%) sepia(29%) saturate(4033%) hue-rotate(213deg) brightness(96%) contrast(95%);
+  filter: invert(46%) sepia(6%) saturate(307%) hue-rotate(244deg) brightness(90%) contrast(92%);
 }
 
 .projects {
@@ -332,7 +335,7 @@ body {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(var(--background-secondary), 0.85);
+  background: rgba(var(--background-primary), 0.85);
 }
 
 .project-title {
@@ -352,6 +355,7 @@ body {
 .project-desc {
   font-size: .9rem;
   font-weight: 600;
+  color: var(--fontcolor-main)
 }
 
 .proj-tech-list {
@@ -360,7 +364,7 @@ body {
   margin-top: auto;
   font-size: .8rem;
   font-weight: 800;
-  background-color: var(--fontcolor-pop);
+  background-color: var(--fontcolor-accent);
   color: transparent;
   text-shadow: 2px 2px 3px rgba(205, 205, 205, 0.5);
   -webkit-background-clip: text;
@@ -379,12 +383,12 @@ body {
 .project-btn {
   padding: 10px 25px;
   border-radius: 4px;
-  border: 2px solid var(--fontcolor-main);
-  color: var(--fontcolor-main);
+  border: 2px solid var(--fontcolor-pop);
+  color: var(--fontcolor-pop);
   margin: 10px 10px 0 0;
   cursor: pointer;
   transition: all .2s ease-out;
-  background-image: linear-gradient(var(--fontcolor-main), var(--fontcolor-main));
+  background-image: linear-gradient(var(--fontcolor-pop), var(--fontcolor-pop));
   background-position: 0 101%;
   background-size: 0% 55px;
   background-repeat: no-repeat;
@@ -430,19 +434,19 @@ body {
 }
 
 #dark-mode .nav-container .mobile-nav .mobile-nav-link {
-  color: var(--fontcolor-dark-secondary);
+  color: var(--fontcolor-dark-main);
 }
 
 #dark-mode .nav-container .mobile-nav .mobile-nav-link:hover {
-  color: var(--fontcolor-dark-accent);
+  color: var(--fontcolor-pop);
 }
 
 #dark-mode .nav-container .main-nav .nav-link {
-  color: var(--fontcolor-secondary);
+  color: var(--fontcolor-dark-main);
 }
 
 #dark-mode .nav-container .main-nav .dark-mode-toggle {
-  color: var(--fontcolor-secondary);
+  color: var(--fontcolor-dark-main);
 }
 
 #dark-mode .nav-container .main-nav .dark-mode-toggle:hover {
@@ -454,16 +458,16 @@ body {
 }
 
 #dark-mode .burger-lines {
-  background-color: rgb(var(--background-dark-project-card));
+  background-color: rgb(var(--background-dark-accent));
 }
 
 #dark-mode .social-link img {
-  -webkit-filter: invert(68%) sepia(33%) saturate(5712%) hue-rotate(9deg) brightness(105%) contrast(98%);
-  filter: invert(68%) sepia(33%) saturate(5712%) hue-rotate(9deg) brightness(105%) contrast(98%);
+  -webkit-filter: invert(94%) sepia(0%) saturate(2849%) hue-rotate(94deg) brightness(106%) contrast(100%);
+  filter: invert(94%) sepia(0%) saturate(2849%) hue-rotate(94deg) brightness(106%) contrast(100%);
 }
 
 #dark-mode .tech-stack .stack-logos img {
-  filter: invert(90%) sepia(4%) saturate(1421%) hue-rotate(338deg) brightness(108%) contrast(98%);
+  filter: invert(94%) sepia(0%) saturate(2849%) hue-rotate(94deg) brightness(106%) contrast(100%);
 }
 
 #dark-mode .intro-greeting {
@@ -475,7 +479,7 @@ body {
 }
 
 #dark-mode .pulse {
-  color: var(--fontcolor-dark-pop);
+  color: var(--fontcolor-dark-accent);
 }
 
 #dark-mode .pulse:hover {
@@ -483,10 +487,14 @@ body {
 }
 
 #dark-mode .contact-btn {
-  color: var(--fontcolor-dark-main);
-  border: 2px solid var(--fontcolor-dark-main);
+  color: var(--fontcolor-dark-secondary);
+  border: 2px solid var(--fontcolor-dark-secondary);
   padding: 15px 60px;
   border-radius: 4px;
+}
+
+#dark-mode .section-title {
+  color: var(--fontcolor-dark-main)
 }
 
 #dark-mode .title-decoration {
@@ -502,17 +510,16 @@ body {
 }
 
 #dark-mode .project-card:before {
-  background: rgba(var(--background-dark), 0.9);
+  background: rgba(var(--background-dark-project-card), 0.9)
+}
+
+#dark-mode .project-desc {
+  color: var(--fontcolor-dark-main)
 }
 
 #dark-mode .proj-tech-list {
   text-shadow: 1px 1px 1px rgba(70, 70, 70, 0.7);
-  color: var(--fontcolor-pop)
-}
-
-#dark-mode .project-btn {
-  color: var(--fontcolor-dark-secondary);
-  border: 2px solid var(--fontcolor-dark-secondary);
+  color: var(--fontcolor-dark-secondary)
 }
 
 #dark-mode .footer {
@@ -527,10 +534,6 @@ body {
 
   .paragraph-text {
     max-width: 900px;
-  }
-
-  #dark-mode .project-btn {
-    background-image: linear-gradient(var(--fontcolor-dark-secondary), var(--fontcolor-dark-secondary));
   }
   
   #dark-mode .project-btn:hover  {
@@ -555,34 +558,18 @@ body {
   }
   
   .contact-btn:hover {
-    color: rgb(var(--background-primary));
+    color: var(--fontcolor-background);
     background-position: 100% 100%;
     background-size: 100% 55px;
     cursor: pointer;
   }
 
   #dark-mode .contact-btn {
-    background-image: linear-gradient(var(--fontcolor-dark-main), var(--fontcolor-dark-main));
-  }
-
-  #dark-mode .contact-btn.contact {
-    color: var(--fontcolor-dark-accent);
-    border: 2px solid var(--fontcolor-dark-accent);
-    background-image: linear-gradient(var(--fontcolor-dark-accent), var(--fontcolor-dark-accent));
+    background-image: linear-gradient(var(--fontcolor-dark-secondary), var(--fontcolor-dark-secondary));
   }
 
   #dark-mode .contact-btn:hover {
     color: rgb(var(--background-dark));
-  }
-
-  .contact-btn.contact {
-    color: var(--fontcolor-dark-accent);
-    border: 2px solid var(--fontcolor-dark-accent);
-    background-image: linear-gradient(var(--fontcolor-dark-accent), var(--fontcolor-dark-accent));
-  }
-
-  .contact-btn:hover {
-    color: rgb(var(--background-primary));
   }
 }
 
@@ -609,12 +596,6 @@ body {
     align-items: center;
     text-transform: uppercase;
     font-size: .85rem;
-  }
-
-  .nav-link {
-    position: relative;
-    color: var(--fontcolor-main);
-    margin-left: 3rem;
   }
 
   .nav-link {
@@ -687,10 +668,6 @@ body {
     margin: 15px 30px;
   }
 
-  #dark-mode .nav-container .main-nav .nav-link {
-    background-image: linear-gradient(var(--fontcolor-pop), var(--fontcolor-pop));
-  }
-
   #dark-mode .nav-container .main-nav .nav-link:hover {
     color: var(--fontcolor-pop);
     background-position: 100% 100%;
@@ -698,7 +675,7 @@ body {
   }
 
   #dark-mode .email {
-    background-color: var(--fontcolor-dark-accent);
+    background-color: var(--fontcolor-dark-main);
     color: rgb(var(--background-dark));
   }
 }
@@ -710,20 +687,17 @@ body {
   }
 
   .project-card:before {
-    background: rgba(var(--background-dark), 0.7);
-  }
-
-  .project-desc {
-    background-color: rgb(var(--background-dark-accent));
+    background: rgba(var(--background-primary), 0.7);
   }
 
   #dark-mode .project-desc {
     padding: 20px;
-    background-color: rgb(var(--background-dark-secondary));
+    background-color: rgb(var(--background-dark));
+    color: var(--fontcolor-background)
   }
 
   #dark-mode .project-card:before {
-    background: rgba(var(--background-dark-project-card), 0.5);
+    background: rgba(var(--background-dark-project-card), 0.7);
   }
 
   .projects-container section:nth-of-type(1)  {
@@ -793,7 +767,7 @@ body {
     width: 600px;
     min-height: 150px;
     border-radius: 4px;
-    background-color: rgb(var(--background-secondary));
+    background-color: rgb(var(--background-primary));
     box-shadow: var(--box-shadow2);
   }
 
