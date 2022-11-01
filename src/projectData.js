@@ -1,7 +1,7 @@
 const projectData = [
   {
     id: 1,
-    imageURL: "url(imgs/project_placeholder.jpg)",
+    imageURL: "url(https://dinardavis.github.io/portfolio_v1/imgs/project_placeholder.jpg)",
     title: "Space X Landing Page",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quo ea odit perspiciatis vel fugit repellendus consectetur inventore, voluptates natus excepturi accusantium nesciunt autem cumque veritatis alias quos eum nulla!",
     tech: ["JavaScript", "React", "Node JS", "JavaScript", "React", "Node JS"],
@@ -10,7 +10,7 @@ const projectData = [
   },
   {
     id: 2,
-    imageURL: "url(imgs/project_placeholder.jpg)",
+    imageURL: "url(https://dinardavis.github.io/portfolio_v1/imgs/project_placeholder.jpg)",
     title: "Project 2",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quo ea odit perspiciatis vel fugit repellendus consectetur inventore, voluptates natus excepturi accusantium nesciunt autem cumque veritatis alias quos eum nulla!",
     tech: ["JavaScript", "React", "Node JS", "JavaScript", "React", "Node JS"],
@@ -19,7 +19,7 @@ const projectData = [
   },
   {
     id: 3,
-    imageURL: "url(imgs/project_placeholder.jpg)",
+    imageURL: "url(https://dinardavis.github.io/portfolio_v1/imgs/project_placeholder.jpg)",
     title: "Project 3",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quo ea odit perspiciatis vel fugit repellendus consectetur inventore, voluptates natus excepturi accusantium nesciunt autem cumque veritatis alias quos eum nulla!",
     tech: ["JavaScript", "React", "Node JS", "JavaScript", "React", "Node JS"],
@@ -28,7 +28,7 @@ const projectData = [
   },
   {
     id: 4,
-    imageURL: "url(imgs/project_placeholder.jpg)",
+    imageURL: "url(https://dinardavis.github.io/portfolio_v1/imgs/project_placeholder.jpg)",
     title: "Project 4",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quo ea odit perspiciatis vel fugit repellendus consectetur inventore, voluptates natus excepturi accusantium nesciunt autem cumque veritatis alias quos eum nulla!",
     tech: ["JavaScript", "React", "Node JS", "JavaScript", "React", "Node JS"],
