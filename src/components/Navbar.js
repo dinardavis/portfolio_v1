@@ -43,7 +43,7 @@ export default function Navbar(props) {
 
   return (
     <header className={`nav-container ${prevScroll === 0 || mobileNavState ? "no-background" : "nav-shadow"}`} style = {{...styles, top: visible ? '0px' : '-75px', backgroundColor: mobileNavState ? "transparent" : ""}}>
-      <a href="/#">
+      <a href="#">
         <img className="nav-logo" style = {{opacity: mobileNavState ? "0" : "1"}} src="imgs/logo.png" alt="main logo" />
       </a>
 
