@@ -48,10 +48,10 @@ export default function Navbar(props) {
       </a>
 
       <div className="main-nav">
-        <a href="/#about" className="nav-link">about</a>
-        <a href="/#work" className="nav-link">projects</a>
-        <a href="/#bonus" className="nav-link">experience</a>
-        <a href="/#contact" className="nav-link">contact</a>
+        <a href="#about" className="nav-link">about</a>
+        <a href="#work" className="nav-link">projects</a>
+        <a href="#bonus" className="nav-link">experience</a>
+        <a href="#contact" className="nav-link">contact</a>
         <div className="dark-mode-toggle" onClick={props.toggleDarkMode}>{props.darkMode ? <i className="fa-regular fa-lightbulb"></i> : <i className="fa-solid fa-lightbulb"></i>}</div>
       </div>
 
