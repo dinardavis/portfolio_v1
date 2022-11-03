@@ -115,9 +115,12 @@ body {
 }
 
 .dark-mode-toggle {
-  margin-left: 25px;
+  position: absolute;
+  top: 10px;
+  left: 25px;
   border: 1.5px solid;
   border-radius: 7px;
+  font-size: 1.2em;
   padding: 2px 8px;
   cursor: pointer;
   transition: color .2s ease-out;
@@ -139,6 +142,10 @@ body {
   margin-bottom: 7px;
   border-radius: 3px;
   transition: all 0.2s linear;
+}
+
+.burger-lines:nth-child(1) {
+  margin-top: 7px;
 }
 
 .animate-burger:nth-child(1) {
@@ -163,13 +170,6 @@ body {
 
 .mobile-nav-link:hover {
   color: var(--fontcolor-pop);
-}
-
-.mobile-nav-link .dark-mode-toggle {
-  position: absolute;
-  top: 10px;
-  left: 25px;
-  margin-left: 0;
 }
 
 .email {
@@ -630,6 +630,11 @@ body {
     color: var(--fontcolor-pop);
     background-position: 100% 100%;
     background-size: 100% 1.5px;
+  }
+
+  .dark-mode-toggle {
+    font-size: .85rem;
+    margin-left: 25px;
   }
 
   .socials-mobile {
