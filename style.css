@@ -114,10 +114,7 @@ body {
   height: 100vh;
 }
 
-.mobile-nav-link .dark-mode-toggle {
-  margin-bottom: 0;
-  font-size: .85rem;
-}
+
 
 .dark-mode-toggle {
   position: absolute;
@@ -133,6 +130,8 @@ body {
 .dark-mode-toggle:hover {
   color: var(--fontcolor-pop);
 }
+
+
 
 .hamburger {
   position: relative;
@@ -174,6 +173,11 @@ body {
 
 .mobile-nav-link:hover {
   color: var(--fontcolor-pop);
+}
+
+.mobile-nav-link .dark-mode-toggle {
+  margin-bottom: 0;
+  font-size: .85rem;
 }
 
 .email {
