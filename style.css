@@ -116,11 +116,12 @@ body {
 
 .dark-mode-toggle {
   position: absolute;
-  top: 10px;
+  top: 17px;
   left: 25px;
+  margin-bottom: 0;
   border: 1.5px solid;
   border-radius: 7px;
-  font-size: 1.2em;
+  font-size: 1em;
   padding: 2px 8px;
   cursor: pointer;
   transition: color .2s ease-out;
@@ -633,6 +634,7 @@ body {
   }
 
   .dark-mode-toggle {
+    position: relative;
     font-size: .85rem;
     margin-left: 25px;
   }
