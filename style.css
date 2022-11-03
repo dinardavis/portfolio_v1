@@ -165,10 +165,11 @@ body {
   color: var(--fontcolor-pop);
 }
 
-.mobile-nav-link.dark-mode-toggle {
+.mobile-nav-link .dark-mode-toggle {
   position: absolute;
   top: 10px;
   left: 25px;
+  margin-left: 0;
 }
 
 .email {
@@ -444,11 +445,13 @@ body {
   background-color: rgba(var(--background-dark), 0);
 }
 
-#dark-mode .nav-container .mobile-nav .mobile-nav-link {
+#dark-mode .nav-container .mobile-nav .mobile-nav-link,
+#dark-mode .nav-container .mobile-nav .mobile-nav-link .dark-mode-toggle{
   color: var(--fontcolor-dark-main);
 }
 
-#dark-mode .nav-container .mobile-nav .mobile-nav-link:hover {
+#dark-mode .nav-container .mobile-nav .mobile-nav-link:hover,
+#dark-mode .nav-container .mobile-nav .mobile-nav-link .dark-mode-toggle:hover {
   color: var(--fontcolor-pop);
 }
 
