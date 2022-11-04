@@ -175,7 +175,7 @@ body {
   color: var(--fontcolor-pop);
 }
 
-.mobile-nav-link .dark-mode-toggle {
+.mobile-nav-link.dark-mode-toggle {
   margin-bottom: 0;
   font-size: .85rem;
 }
