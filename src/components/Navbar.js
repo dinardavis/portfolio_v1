@@ -58,6 +58,8 @@ export default function Navbar(props) {
       <MobileNav 
         mobileNavState={mobileNavState}
         handleToggle={handleToggle} 
+        toggleDarkMode={props.toggleDarkMode}
+        darkMode={props.darkMode}
       />
       
     </header>
