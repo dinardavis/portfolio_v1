@@ -352,7 +352,9 @@ body {
 }
 
 .project-link {
-  display: inline-block;
+  display: block;
+  width: 100%;
+  height: 375px;
 }
 
 .project-title {
