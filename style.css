@@ -352,7 +352,7 @@ body {
 }
 
 .project-link {
-  display: inline-block;
+  display: block;
 }
 
 .project-title {
