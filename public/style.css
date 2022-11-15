@@ -351,6 +351,10 @@ body {
   background: rgba(var(--background-primary), 0.85);
 }
 
+.project-link {
+  display: inline-block;
+}
+
 .project-title {
   margin-bottom: 15px;
   color: var(--fontcolor-secondary);

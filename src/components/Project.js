@@ -38,8 +38,10 @@ export default function Project(props) {
               <a href={props.demo} className="project-btn btn-2" target="_blank" rel="noopener noreferrer">Preview</a>
             </div>    
           </div>
-          <div className="project-card" style={{backgroundImage: props.image}}>
-          </div>     
+          <a href={props.demo} class="project-link" target="_blank" rel="noopener noreferrer">
+            <div className="project-card" style={{backgroundImage: props.image}}>
+            </div>  
+          </a>   
       </section>
     
     </>
