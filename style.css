@@ -325,7 +325,7 @@ body {
   display: none;
 }
 
-.project-card {
+a .project-card {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -340,7 +340,7 @@ body {
   margin-bottom: 70px;
 }
 
-.project-card:before {
+a .project-card:before {
   content: "";
   position: absolute;
   border-radius: 8px;
