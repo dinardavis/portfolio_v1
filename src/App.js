@@ -1,5 +1,4 @@
 import React from "react"
-import './App.css';
 import Navbar from './components/Navbar'
 import SocialsDesktop from './components/SocialsDesktop'
 import Intro from './components/Intro'

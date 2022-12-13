@@ -1,10 +1,32 @@
 import React from 'react'
+import { useRef } from "react";
+import { useInView } from "framer-motion";
+
+function Section({ children }) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  return (
+    <section ref={ref} id="intro">
+      <span
+        className="greeting-message"
+        style={{
+          transform: isInView ? "none" : "translateX(-700px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all .9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+        }}
+      >
+        {children}
+      </span>
+    </section>
+  );
+}
 
 export default function Intro() {
 
   return (
-    <section className="intro">
-      <div className="greeting-message">
+    <>
+      <Section>
         <div className='greeting-container'>
           <h1 className="intro-greeting">Hi, my name is<span className="name"><a className="pulse" href="https://www.google.com/search?q=dinar+pronunciation&rlz=1C5CHFA_enUS760US760&ei=cBthYdrKL5Cq_QbdorbAAw&oq=dinar+pronunciation&gs_lcp=Cgdnd3Mtd2l6EAEYADIECAAQQzIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIECAAQQzIGCAAQBxAeMgYIABAHEB4yCAgAEAcQChAeMggIABAHEAoQHjIGCAAQBRAeSgQIQRgASgUIRBiccUoFCEQYuXJKBAhDGAJKBQhFGLlyULhuWORxYI9_aABwAngAgAGMAYgB_QSSAQMwLjWYAQCgAQHAAQE&sclient=gws-wiz"  target="_blank" rel="noreferrer">Dinar</a> Davis.</span></h1>
         </div>
@@ -14,7 +36,7 @@ export default function Intro() {
 
         </div>
         <a href="mailto:dinardavis@gmail.com?subject=I%20saw%20your%20portfolio%20and..." target="_blank" rel="noopener noreferrer" className="contact-btn">Get In Touch</a>
-      </div>
-    </section>
+      </Section>
+    </>
   )
 }
