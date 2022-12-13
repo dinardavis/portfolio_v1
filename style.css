@@ -24,7 +24,8 @@ img {
   --background-dark: 27, 27, 30;
   --background-dark-secondary: 19, 26, 47;
   --background-dark-accent: 251, 255, 254;
-  --background-dark-project-card: 34, 33, 33;
+  --background-dark-project-card: 27,27,30;
+
   --fontcolor-main: #706b71;
   --fontcolor-background: #fbfffe;
   --fontcolor-secondary: #faa916;
@@ -38,7 +39,7 @@ img {
   --main-transition: all .1s ease-in-out;
   --box-shadow1: rgba(0, 0, 0, 0.4) 3px 3px 8px;
   --box-shadow2: rgba(0, 0, 0, 0.4) 5px 5px 22px;
-  --box-shadow-dark-mode: rgba(172, 172, 172, 0.2) 2px 2px 10px;
+  --box-shadow-dark-mode: rgba(172, 172, 172, 0.05) 3px 3px 8px;
   --box-shadow-nav: rgba(172, 172, 172, 0.2) 2px 2px 5px;
 }
 
@@ -52,7 +53,6 @@ body {
   color: var(--fontcolor-main);
   overscroll-behavior-y: none;
 }
-
 
 .fixed-position {
   overflow: hidden;
@@ -68,9 +68,37 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
+  overflow: hidden;
   width: 100%;
   padding: 25px;
   z-index: 5;
+}
+
+#intro,
+#about,
+#work,
+#contact {
+  display: flex;
+}
+
+#intro {
+  
+  position: relative;
+  height: 100vh;
+  max-height: 1400px;
+}
+
+#about {
+  margin-bottom: 4rem;
+}
+
+#work {
+  flex-direction: column;
+}
+
+#work,
+#contact {
+  margin: 8rem 0 4rem;
 }
 
 .nav-container.no-background {
@@ -276,13 +304,6 @@ body {
   margin-top: 8rem;
 }
 
-.intro {
-  position: relative;
-  padding-top: 100px;
-  height: 100vh;
-  max-height: 1400px;
-}
-
 .about {
   margin-top: 0;
 }
@@ -426,7 +447,7 @@ body {
 
 .contact-text {
   margin: 50px 20px;
-  max-width: 600px;
+  width: 70%;
 }
 
 .footer {
@@ -557,9 +578,7 @@ body#dark-mode {
     max-width: 1100px;
   }
 
-  .paragraph-text {
-    max-width: 900px;
-  }
+
   
   #dark-mode .project-btn:hover  {
     color: rgb(var(--background-dark));
@@ -620,7 +639,7 @@ body#dark-mode {
     justify-content: end;
     align-items: center;
     text-transform: uppercase;
-    font-size: .85rem;
+    font-size: .95rem;
   }
 
   .nav-link {
@@ -714,6 +733,10 @@ body#dark-mode {
 }
 
 @media screen and (min-width: 1000px){
+  .contact-text {
+    width: 48%;
+  }
+
   .stack-logos img {
     height: 4em;
     margin: 20px 40px;
@@ -769,7 +792,6 @@ body#dark-mode {
   .project-card-desktop {
     display: flex;
     position: relative;
-    height: 400px;
     padding: 0 10px 25px;
     margin-bottom: 150px;
   }
@@ -809,3 +831,4 @@ body#dark-mode {
   }
 
 }
+
