@@ -39,7 +39,7 @@ img {
   --main-transition: all .1s ease-in-out;
   --box-shadow1: rgba(0, 0, 0, 0.4) 3px 3px 8px;
   --box-shadow2: rgba(0, 0, 0, 0.4) 5px 5px 22px;
-  --box-shadow-dark-mode: rgba(172, 172, 172, 0.05) 3px 3px 8px;
+  --box-shadow-dark-mode: rgba(185, 184, 184, 0.2) 3px 3px 8px;
   --box-shadow-nav: rgba(172, 172, 172, 0.2) 2px 2px 5px;
 }
 
@@ -49,7 +49,6 @@ body {
   font-weight: 500;
   line-height: 1.4;
   background-attachment: fixed;
-  
   color: var(--fontcolor-main);
   overscroll-behavior-y: none;
 }
@@ -82,14 +81,13 @@ body {
 }
 
 #intro {
-  
   position: relative;
   height: 100vh;
   max-height: 1400px;
 }
 
 #about {
-  margin-bottom: 4rem;
+  margin-bottom: 10rem;
 }
 
 #work {
