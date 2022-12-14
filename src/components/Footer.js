@@ -9,7 +9,7 @@ export default function Footer() {
         <a href="https://twitter.com/dinardavis" className="social-link" target="_blank" rel="noopener noreferrer"><img src="imgs/social/twitter.svg" alt=""/></a>
         <a href="/#" className="social-link" target="_blank" rel="noopener noreferrer"><img src="imgs/social/cv.svg" alt=""/></a>
       </div>
-      <div>&copy;2022 Designed & Built by Dinar Davis</div>
+      <div>&copy;2023 Designed & Built by Dinar Davis</div>
     </footer>
   )
 }
