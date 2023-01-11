@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Project(props) {
   let listItems = []
-  for(let i = 0; i < 6; i++) {
+  for(let i = 0; i < props.tech.length; i++) {
     listItems.push(<li className='project-tech' key={i} >{props.tech[i]}</li>)
   }
 
@@ -15,6 +15,7 @@ export default function Project(props) {
             <p>{props.desc}</p>
           </div>
           <ul className="proj-tech-list">
+            <p className="proj-tech-header">Project Tech</p><span className='proj-tech-span'>:</span>
             {listItems}
           </ul>
           <div className='btn-container'>
@@ -31,6 +32,7 @@ export default function Project(props) {
               <p>{props.desc}</p>
             </div>
             <ul className="proj-tech-list">
+              <p className="proj-tech-header">Project Tech</p><span className='proj-tech-span'>:</span>
               {listItems}
             </ul>
             <div className='btn-container'>
