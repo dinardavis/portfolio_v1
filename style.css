@@ -394,7 +394,8 @@ body {
 .project-desc {
   font-size: .9rem;
   font-weight: 600;
-  color: var(--fontcolor-main)
+  color: var(--fontcolor-main);
+  margin-bottom: 15px;
 }
 
 .proj-tech-list {
@@ -403,12 +404,16 @@ body {
   margin-top: auto;
   font-size: .8rem;
   font-weight: 800;
-  background-color: var(--fontcolor-accent);
-  color: transparent;
-  text-shadow: 2px 2px 3px rgba(205, 205, 205, 0.5);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
+  color: #1b1b1e
+}
+
+.proj-tech-header {
+  text-decoration: underline;
+}
+
+.proj-tech-span{
+  text-decoration: none;
+  margin-right: 5px;
 }
 
 .project-tech {
@@ -769,6 +774,11 @@ body#dark-mode {
 
   .projects-container section:nth-of-type(even) .proj-tech-list {
     justify-content: flex-end;
+    margin-left: 15px;
+  }
+
+  .projects-container section:nth-of-type(even) .proj-tech-span {
+    margin-right: -7px;
   }
 
   .projects-container section:nth-of-type(even) .project-tech {
