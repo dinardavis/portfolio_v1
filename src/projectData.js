@@ -2,8 +2,8 @@ const projectData = [
   {
     id: 1,
     imageURL: "url(imgs/suitsupply_thumbnail.png)",
-    title: "Fullstack E-commerce Site",
-    description: "This fullstack e-commerce site is built primarily utilizing React. It features a headless CMS (Strapi), fully functional user login with integrated Google authentication, shopping cart checkout, order history, and purchase confirmation.",
+    title: "Fullstack E-Commerce Site",
+    description: "This MERN stack e-commerce site features a headless CMS (Strapi), fully functional user login with integrated Google authentication, shopping cart checkout, order history, and purchase confirmation.",
     tech: ["ReactJS","Next.js","Node.js","Auth0","Strapi","GraphQL","Stripe","HTML","CSS"],
     gitURL: "https://github.com/dinardavis/spacex_clone",
     liveDemoURL: "https://dinardavis.github.io/spacex_clone/",
@@ -20,7 +20,7 @@ const projectData = [
   {
     id: 3,
     imageURL: "url(https://dinardavis.github.io/portfolio_v1/imgs/spacex_thumbnail.png)",
-    title: "SpaceX Clone Landing Page",
+    title: "SpaceX Landing Page Clone",
     description: "Built with HTML, CSS, and Vanilla JavaScript, the goal of this project was to create a SpaceX landing page clone as true to the actual website as possible. My clone is fully responsive, and includes links to the corporate site, offering a complete and seamless user experience.",
     tech: ["HTML","CSS","JavaScript"],
     gitURL: "https://github.com/dinardavis/spacex_clone",
