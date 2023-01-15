@@ -22,7 +22,7 @@ export default function MobileNav(props) {
         <a href="#work" className="mobile-nav-link">projects</a>
         {/* <a href="#bonus" className="mobile-nav-link">experience</a> */}
         <a href="#contact" className="mobile-nav-link">contact</a>
-        <a href={require("../assets/resume.pdf")} download="resume" className="mobile-nav-link">resumé</a>
+        <a href={require("../assets/dinardavis.pdf")} download="dinardavis" className="mobile-nav-link">resumé</a>
         <div className="mobile-nav-link dark-mode-toggle" onClick={props.toggleDarkMode}>{props.darkMode ? <i className="fa-regular fa-lightbulb"></i> : <i className="fa-solid fa-lightbulb"></i>}</div>
       </div>
     </div>

@@ -6,7 +6,7 @@ export default function SocialsDesktop() {
         <a href="https://github.com/dinardavis" className="social-link" target="_blank" rel="noopener noreferrer"><img src="imgs/social/github.svg" alt=""/></a>
         <a href="https://www.linkedin.com/in/dinardavis/" className="social-link" target="_blank" rel="noopener noreferrer"><img src="imgs/social/linkedin.svg" alt=""/></a>
         <a href="https://twitter.com/dinardavis" className="social-link" target="_blank" rel="noopener noreferrer"><img src="imgs/social/twitter.svg" alt=""/></a>
-        <a href={require("../assets/dinardavis.pdf")} download="resume" className="social-link" target="_blank" rel="noopener noreferrer"><img src="imgs/social/cv.svg" title="Download Resumé" alt=""/></a>
+        <a href={require("../assets/dinardavis.pdf")} download="dinardavis" className="social-link" target="_blank" rel="noopener noreferrer"><img src="imgs/social/cv.svg" title="Download Resumé" alt=""/></a>
       </div>
   )
 }
