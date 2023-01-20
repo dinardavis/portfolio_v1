@@ -14,8 +14,8 @@ const projectData = [
     title: "Travel Inspiration Dashboard",
     description: "Built with React, the Travel Dreams Dashboard concept allows users to enter the name of a city that they wish to travel to, and via multiple API requests, receive information such as the current weather, the price of a flight from a chosen departure city, and a populated image carousel to inspire a future getaway. And, stay tuned for several additional components that I plan to build out in the future!",
     tech: ["ReactJS","Fetch","LocalStorage","HTML","CSS"],
-    gitURL: "https://github.com/dinardavis/spacex_clone",
-    liveDemoURL: "https://dinardavis.github.io/spacex_clone/",
+    gitURL: "https://github.com/dinardavis/travel_app",
+    liveDemoURL: "https://dinardavis.github.io/travel_app/",
   },
   {
     id: 3,
