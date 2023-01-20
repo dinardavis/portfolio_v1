@@ -40,13 +40,13 @@ export default function About() {
           </div>
           <div className="tech-stack">
             <div className="stack-logos">
-              <img src="../imgs/techstack/javascript.svg" className="stack-logo" title="Javascript" alt="" />
-              <img src="imgs/techstack/react.svg" className="stack-logo" title="React" alt="" />
-              <img src="imgs/techstack/nodejs.svg" className="stack-logo" title="Node.js" alt="" />
-              <img src="imgs/techstack/jquery.svg" className="stack-logo" title="jQuery" alt="" />
-              <img src="imgs/techstack/sass.svg" className="stack-logo" title="Sass" alt="" />
-              <img src="imgs/techstack/photoshop.svg" className="stack-logo" title="Photoshop" alt="" />
-              <img src="imgs/techstack/illustrator.svg" className="stack-logo" title="Illustrator" alt="" />
+              <img src="imgs/techstack/javascript.svg" className="stack-logo" title="Javascript" alt="JavaScript Logo" />
+              <img src="imgs/techstack/react.svg" className="stack-logo" title="React" alt="React Logo" />
+              <img src="imgs/techstack/nodejs.svg" className="stack-logo" title="Node.js" alt="Node.js Logo" />
+              <img src="imgs/techstack/jquery.svg" className="stack-logo" title="jQuery" alt="JQuery Logo" />
+              <img src="imgs/techstack/sass.svg" className="stack-logo" title="Sass" alt="Sass Logo" />
+              <img src="imgs/techstack/photoshop.svg" className="stack-logo" title="Photoshop" alt="Photoshop Logo" />
+              <img src="imgs/techstack/illustrator.svg" className="stack-logo" title="Illustrator" alt="Illustrator Logo" />
             </div>
           </div>
         </div>
