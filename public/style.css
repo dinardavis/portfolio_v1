@@ -220,12 +220,7 @@ body {
 
 .socials-mobile-nav {
   display: flex;
-  padding: 0 10rem;
-}
-
-.socials-mobile-nav {
-  position: absolute;
-  bottom: 2rem;
+  margin: 15px;
 }
 
 .socials-desktop {
