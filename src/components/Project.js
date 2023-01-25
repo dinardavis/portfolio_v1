@@ -37,7 +37,7 @@ export default function Project(props) {
             </ul>
             <div className='btn-container'>
               <a href={props.git} className="project-btn btn-1" target="_blank" rel="noopener noreferrer">Github</a>
-              <a href={props.demo} className="project-btn btn-2" target="_blank" rel="noopener noreferrer">Preview</a>
+              <a href={props.demo} className="project-btn btn-2" target="_blank" rel="noopener noreferrer">Demo</a>
             </div>    
           </div>
           <a href={props.demo} className="project-link" target="_blank" rel="noopener noreferrer">
