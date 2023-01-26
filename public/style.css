@@ -165,6 +165,7 @@ body {
 .hamburger {
   position: relative;
   z-index: 100;
+  cursor: pointer;
 }
 
 .burger-lines {
@@ -532,12 +533,13 @@ body#dark-mode {
   filter: invert(94%) sepia(0%) saturate(2849%) hue-rotate(94deg) brightness(106%) contrast(100%);
 }
 
-#dark-mode .socials-mobile-nav .social-link img:hover {
-  filter: invert(19%) sepia(73%) saturate(6786%) hue-rotate(348deg) brightness(80%) contrast(98%);
-}
-
 #dark-mode .tech-stack .stack-logos img {
   filter: invert(94%) sepia(0%) saturate(2849%) hue-rotate(94deg) brightness(106%) contrast(100%);
+}
+
+#dark-mode .socials-mobile-nav .social-link img:hover {
+  -webkit-filter: invert(19%) sepia(73%) saturate(6786%) hue-rotate(348deg) brightness(80%) contrast(98%);
+  filter: invert(19%) sepia(73%) saturate(6786%) hue-rotate(348deg) brightness(80%) contrast(98%);
 }
 
 #dark-mode .intro-greeting {
