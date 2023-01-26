@@ -227,7 +227,7 @@ body {
 }
 
 .socials-mobile-nav .social-link img:hover {
-  color: var(--fontcolor-pop);
+  filter: invert(19%) sepia(73%) saturate(6786%) hue-rotate(348deg) brightness(80%) contrast(98%);
 }
 
 .socials-desktop {
