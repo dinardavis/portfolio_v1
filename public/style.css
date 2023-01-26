@@ -226,6 +226,10 @@ body {
   margin: 5px 20px;
 }
 
+.socials-mobile-nav .social-link img:hover {
+  color: var(--fontcolor-pop);
+}
+
 .socials-desktop {
   display: none;
 }
