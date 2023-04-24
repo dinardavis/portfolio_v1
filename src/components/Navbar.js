@@ -7,6 +7,7 @@ export default function Navbar(props) {
   const [prevScroll, setPrevScroll] = React.useState(0) 
   const [visible, setVisible] = React.useState(true)
   const [mobileNavState, setMobileNavState] = React.useState(false)
+  const [windowWidth, setWindowWidth] = React.useState(window.innerWidth)
 
   function handleToggle() {
     setMobileNavState(prevNav => !prevNav)
@@ -22,13 +23,23 @@ export default function Navbar(props) {
     setPrevScroll(scrollTop)
   }, 10)
 
-  
-
   React.useEffect(() => {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
+    
 
   }, [prevScroll, visible, handleScroll])
+
+  React.useEffect(() => {
+    const handleWindowResize = () => {
+      setWindowWidth(window.innerWidth)
+    }
+    window.addEventListener("resize", handleWindowResize)
+
+    if(windowWidth > 800) {
+      setMobileNavState(false)
+    }
+  }, [windowWidth])
 
   const styles = {
     position: 'fixed',

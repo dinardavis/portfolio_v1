@@ -316,6 +316,23 @@ body {
   border-radius: 4px;
 }
 
+.intro-btn-container {
+  display: flex;
+}
+
+.intro-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  padding: 15px;
+  margin-right: 1rem;
+}
+
+.btn-icon {
+  margin-right: .3rem;
+}
+
 .section-container {
   margin-top: 8rem;
 }
@@ -561,8 +578,12 @@ body#dark-mode {
 #dark-mode .contact-btn {
   color: var(--fontcolor-dark-secondary);
   border: 2px solid var(--fontcolor-dark-secondary);
-  padding: 15px 60px;
-  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  padding: 15px;
+  margin-right: 1rem;
 }
 
 #dark-mode .section-title {

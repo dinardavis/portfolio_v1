@@ -1,6 +1,7 @@
 import React from 'react'
 import { useRef } from "react";
 import { useInView } from "framer-motion";
+import { AiOutlineDownload } from "react-icons/ai"
 
 function Section({ children }) {
   const ref = useRef(null);
@@ -35,7 +36,10 @@ export default function Intro() {
           <p className="paragraph-text intro-text">If you have a project that you're interested in collaborating on, feel free to drop me a line.</p>
 
         </div>
-        <a href="mailto:dinardavis@gmail.com?subject=I%20saw%20your%20portfolio%20and..." target="_blank" rel="noopener noreferrer" className="contact-btn">Get In Touch</a>
+        <div className='intro-btn-container'>
+          <a href="mailto:dinardavis@gmail.com?subject=I%20saw%20your%20portfolio%20and..." target="_blank" rel="noopener noreferrer" className="contact-btn intro-btn">Get In Touch</a>
+          <a href={require("../assets/dinardavis.pdf")} download="dinardavis" className="contact-btn intro-btn" target="_blank" rel="noopener noreferrer"><AiOutlineDownload className='btn-icon' /> Resumé</a>
+        </div>
       </Section>
     </>
   )
