@@ -10,6 +10,9 @@ import Footer from './components/Footer'
 
 
 function App() {
+
+  //Detect and handle dark-mode toggle
+
   const [darkMode, setDarkMode] = React.useState(true)
 
   function toggleDarkMode() {
@@ -20,6 +23,24 @@ function App() {
       document.body.id = ""
     }
   }
+
+  React.useEffect(() => {
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      setDarkMode(true)
+      toggleDarkMode()
+    } 
+  }, [])
+
+ 
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      setDarkMode(true)
+      toggleDarkMode();
+    } else {
+      setDarkMode(false)
+      toggleDarkMode()
+    }
+  });
   
   return (
       <>  
