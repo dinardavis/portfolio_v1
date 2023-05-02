@@ -38,7 +38,7 @@ export default function Intro() {
         </div>
         <div className='intro-btn-container'>
           <a href="mailto:dinardavis@gmail.com?subject=I%20saw%20your%20portfolio%20and..." target="_blank" rel="noopener noreferrer" className="contact-btn intro-btn">Get In Touch</a>
-          <a href={require("../assets/dinardavis.pdf")} download="dinardavis" className="contact-btn intro-btn" target="_blank" rel="noopener noreferrer"><AiOutlineDownload className='btn-icon' /> Resumé</a>
+          <a href={require("../assets/dinardavis.pdf")} download="Dinar Davis Resume" className="contact-btn intro-btn" target="_blank" rel="noopener noreferrer"><AiOutlineDownload className='btn-icon' /> Resumé</a>
         </div>
       </Section>
     </>
