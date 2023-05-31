@@ -13,7 +13,7 @@ function App() {
 
   //Detect and handle dark-mode toggle
 
-  const [darkMode, setDarkMode] = React.useState(true)
+  const [darkMode, setDarkMode] = React.useState(false)
 
   function toggleDarkMode() {
     setDarkMode(prevMode => !prevMode)
@@ -30,17 +30,6 @@ function App() {
       toggleDarkMode()
     } 
   }, [])
-
- 
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      setDarkMode(true)
-      toggleDarkMode();
-    } else {
-      setDarkMode(false)
-      toggleDarkMode()
-    }
-  });
   
   return (
       <>  
