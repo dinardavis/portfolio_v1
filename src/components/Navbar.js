@@ -8,6 +8,16 @@ export default function Navbar(props) {
   const [visible, setVisible] = React.useState(true)
   const [mobileNavState, setMobileNavState] = React.useState(false)
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth)
+  const [darkMode, setDarkMode] = React.useState(false)
+
+  function toggleDarkMode() {
+    setDarkMode(prevMode => !prevMode)
+    if(!darkMode) {
+      document.body.id = "dark-mode"
+    } else {
+      document.body.id = ""
+    }
+  }
 
   function handleToggle() {
     setMobileNavState(prevNav => !prevNav)
@@ -24,10 +34,12 @@ export default function Navbar(props) {
   }, 10)
 
   React.useEffect(() => {
+    console.log(darkMode)
+  }, [darkMode])
+
+  React.useEffect(() => {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
-    
-
   }, [prevScroll, visible, handleScroll])
 
   React.useEffect(() => {
@@ -62,14 +74,14 @@ export default function Navbar(props) {
         <a href="#about" className="nav-link">about</a>
         <a href="#work" className="nav-link">projects</a>
         <a href="#contact" className="nav-link">contact</a>
-        <div className="dark-mode-toggle" onClick={props.toggleDarkMode}>{props.darkMode ? <i className="fa-regular fa-lightbulb"></i> : <i className="fa-solid fa-lightbulb"></i>}</div>
+        <div className="dark-mode-toggle" onClick={toggleDarkMode}><i className="fa-solid fa-lightbulb"></i></div>
       </div>
 
       <MobileNav 
         mobileNavState={mobileNavState}
         handleToggle={handleToggle} 
-        toggleDarkMode={props.toggleDarkMode}
-        darkMode={props.darkMode}
+        toggleDarkMode={toggleDarkMode}
+        darkMode={darkMode}
       />
       
     </header>

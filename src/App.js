@@ -13,31 +13,18 @@ function App() {
 
   //Detect and handle dark-mode toggle
 
-  const [darkMode, setDarkMode] = React.useState(false)
-
-  function toggleDarkMode() {
-    setDarkMode(prevMode => !prevMode)
-    if(darkMode) {
-      document.body.id = "dark-mode"
-    } else {
-      document.body.id = ""
-    }
-  }
-
-  React.useEffect(() => {
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      setDarkMode(true)
-      toggleDarkMode()
-    } 
-  }, [])
+ 
+  // React.useEffect(() => {
+  //   if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  //     setDarkMode(true)
+  //     toggleDarkMode()
+  //   } 
+  // }, [])
   
   return (
       <>  
         <div className="master-container">
-          <Navbar 
-            toggleDarkMode={toggleDarkMode}
-            darkMode={darkMode}
-          />
+          <Navbar />
           <SocialsDesktop />
           <Email />
           <div className="main-container">
