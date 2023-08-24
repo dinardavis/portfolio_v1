@@ -3,7 +3,7 @@ import React from 'react';
 import MobileNav from './MobileNav';
 import { debounce } from './utilities/helpers';
 
-export default function Navbar(props) {
+export default function Navbar() {
   const [prevScroll, setPrevScroll] = React.useState(0) 
   const [visible, setVisible] = React.useState(true)
   const [mobileNavState, setMobileNavState] = React.useState(false)
